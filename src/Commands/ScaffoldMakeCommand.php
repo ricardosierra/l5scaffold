@@ -1,19 +1,19 @@
 <?php
 
-namespace Laralib\L5scaffold\Commands;
+namespace Celtaphp\L5scaffold\Commands;
 
 //use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Composer;
-use Laralib\L5scaffold\Makes\MakeController;
-use Laralib\L5scaffold\Makes\MakeLayout;
-use Laralib\L5scaffold\Makes\MakeMigration;
-use Laralib\L5scaffold\Makes\MakeModel;
-use Laralib\L5scaffold\Makes\MakerTrait;
-use Laralib\L5scaffold\Makes\MakeSeed;
-use Laralib\L5scaffold\Makes\MakeView;
+use Celtaphp\L5scaffold\Makes\MakeController;
+use Celtaphp\L5scaffold\Makes\MakeLayout;
+use Celtaphp\L5scaffold\Makes\MakeMigration;
+use Celtaphp\L5scaffold\Makes\MakeModel;
+use Celtaphp\L5scaffold\Makes\MakerTrait;
+use Celtaphp\L5scaffold\Makes\MakeSeed;
+use Celtaphp\L5scaffold\Makes\MakeView;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 

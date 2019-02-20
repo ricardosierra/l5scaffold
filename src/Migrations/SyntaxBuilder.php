@@ -1,13 +1,13 @@
 <?php
 
-namespace Laralib\L5scaffold\Migrations;
+namespace Celtaphp\L5scaffold\Migrations;
 
-use Laralib\L5scaffold\GeneratorException;
+use Celtaphp\L5scaffold\GeneratorException;
 
 
 /**
  * Class SyntaxBuilder with modifications by Fernando
- * @package Laralib\L5scaffold\Migrations
+ * @package Celtaphp\L5scaffold\Migrations
  * @author Jeffrey Way <jeffrey@jeffrey-way.com>
  */
 class SyntaxBuilder

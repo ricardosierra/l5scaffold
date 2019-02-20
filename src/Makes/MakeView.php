@@ -6,13 +6,13 @@
  * Time: 4:58 PM
  */
 
-namespace Laralib\L5scaffold\Makes;
+namespace Celtaphp\L5scaffold\Makes;
 
 
 use Illuminate\Filesystem\Filesystem;
-use Laralib\L5scaffold\Commands\ScaffoldMakeCommand;
-use Laralib\L5scaffold\Migrations\SchemaParser;
-use Laralib\L5scaffold\Migrations\SyntaxBuilder;
+use Celtaphp\L5scaffold\Commands\ScaffoldMakeCommand;
+use Celtaphp\L5scaffold\Migrations\SchemaParser;
+use Celtaphp\L5scaffold\Migrations\SyntaxBuilder;
 
 class MakeView
 {

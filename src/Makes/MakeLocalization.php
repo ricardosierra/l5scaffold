@@ -6,12 +6,12 @@
  * Time: 10:34 PM
  */
 
-namespace Laralib\L5scaffold\Makes;
+namespace Celtaphp\L5scaffold\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Laralib\L5scaffold\Commands\ScaffoldMakeCommand;
-use Laralib\L5scaffold\Localizations\SchemaParser as LocalizationsParser;
-use Laralib\L5scaffold\Localizations\SyntaxBuilder as LocalizationsBuilder;
+use Celtaphp\L5scaffold\Commands\ScaffoldMakeCommand;
+use Celtaphp\L5scaffold\Localizations\SchemaParser as LocalizationsParser;
+use Celtaphp\L5scaffold\Localizations\SyntaxBuilder as LocalizationsBuilder;
 
 class MakeLocalization
 {

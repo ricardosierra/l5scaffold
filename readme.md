@@ -1,13 +1,13 @@
 # Laravel 5.x Scaffold Generator
-[![Travis](https://img.shields.io/travis/laralib/l5scaffold.svg?style=flat-square)](https://github.com/laralib/l5scaffold)
-[![Packagist](https://img.shields.io/packagist/dt/laralib/l5scaffold.svg?style=flat-square)](https://packagist.org/packages/laralib/l5scaffold)
-[![Tag](https://img.shields.io/github/tag/laralib/l5scaffold.svg)](https://github.com/laralib/l5scaffold/tags)
+[![Travis](https://img.shields.io/travis/celtaphp/l5scaffold.svg?style=flat-square)](https://github.com/celtaphp/l5scaffold)
+[![Packagist](https://img.shields.io/packagist/dt/celtaphp/l5scaffold.svg?style=flat-square)](https://packagist.org/packages/celtaphp/l5scaffold)
+[![Tag](https://img.shields.io/github/tag/celtaphp/l5scaffold.svg)](https://github.com/celtaphp/l5scaffold/tags)
 ## Usage
 
 ### Step 1: Install Through Composer
 
 ```
-composer require 'laralib/l5scaffold' --dev
+composer require 'celtaphp/l5scaffold' --dev
 ```
 
 ### Step 2: Add the Service Provider
@@ -15,7 +15,7 @@ composer require 'laralib/l5scaffold' --dev
 Open `config/app.php` and, to your **providers** array at the bottom, add:
 
 ```
-Laralib\L5scaffold\GeneratorsServiceProvider::class
+Celtaphp\L5scaffold\GeneratorsServiceProvider::class
 ```
 
 ### Step 3: Run Artisan!
