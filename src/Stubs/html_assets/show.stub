@@ -1,0 +1,36 @@
+@extends('layouts.adminlte')
+@section('header')
+<div class="page-header">
+        <h3>{{Class}} / Exibir #{{${{classSingle}}->id}}</h3>
+        <form action="{{ route('{{prefix}}{{class}}.destroy', ${{classSingle}}->uuid) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Deseja realmente excluir esse item?')) { return true } else {return false };">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <div class="btn-group pull-right" role="group" aria-label="...">
+                @shield('{{class}}.edit')
+                    <a class="btn btn-warning btn-group" role="group" href="{{ route('{{class}}.edit', ${{classSingle}}->uuid) }}"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                @endshield
+                @shield('{{class}}.destroy')
+                    <button type="submit" class="btn btn-danger">Excluir <i class="glyphicon glyphicon-trash"></i></button>
+                @endshield
+            </div>
+        </form>
+    </div>
+@endsection
+
+@section('content')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-default">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="nome">ID</label>
+                        <p class="form-control-static">{{${{classSingle}}->id}}</p>
+                    </div>
+                    {{content_fields}}
+                </div>
+                <a class="btn btn-link" href="{{ route('{{prefix}}{{class}}.index') }}"><i class="glyphicon glyphicon-backward"></i>  Voltar</a>
+            </div>
+        </div>
+    </div>
+
+@endsection

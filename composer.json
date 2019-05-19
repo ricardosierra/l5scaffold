@@ -1,13 +1,13 @@
 {
-  "name": "laralib/l5scaffold",
-  "description": "Extend Laravel 5's generators scaffold.",
+  "name": "celtaphp/l5scaffold",
+  "description": "Extend Laravel 5's generators scaffold. Forked Celtaphp",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
   "minimum-stability": "dev",
   "authors": [
     {
-      "name": "Fernando Brito",
-      "email": "fernandobritofl@gmail.com"
+      "name": "Rafael Gil",
+      "email": "celtaphp@gmail.com"
     }
   ],
   "require": {
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Laralib\\L5scaffold\\": "src/"
+      "Celtaphp\\L5scaffold\\": "src/"
     }
   }
 }

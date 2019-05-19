@@ -1,0 +1,35 @@
+@extends('layouts.adminlte')
+@section('css')
+@endsection
+@section('header')
+    <div class="page-header">
+        <h3> {{Class}} / Criar </h3>
+    </div>
+@endsection
+
+@section('content')
+    @include('messages')
+         @include('error')
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-default">
+
+                <form action="{{ route('{{prefix}}{{class}}.store') }}" method="POST">
+                    <div class="box-body">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                        {{content_fields}}
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">Criar</button>
+                        <a class="btn btn-link pull-right" href="{{ route('{{prefix}}{{class}}.index') }}"><i class="glyphicon glyphicon-backward"></i> Voltar</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+@endsection
+@section('scripts')
+@endsection

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laralib\L5scaffold\Localizations;
+namespace Celtaphp\L5scaffold\Localizations;
 
 /**
  * Class SchemaParser
- * @package Laralib\L5scaffold\Migrations
+ * @package Celtaphp\L5scaffold\Migrations
  * @author Ryan Gurnick <ryangurnick@gmail.com>
  */
 class SchemaParser

@@ -1,29 +1,27 @@
-<?php
+<?php namespace App\Http\Controllers;
 
-namespace App\Http\Controllers;
-
-use {{namespace}}{{Model}};
-use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class {{Model}}Controller extends Controller
-{
-	/**
-	 * Variable to model
-	 *
-	 * @var {{model}}
-	 */
-	protected $model;
+use {{model_path}};
+use App\Services\{{model_name_service}};
+use App\Http\Requests\{{model_name_class}}Request;
+use Illuminate\Http\Request;
 
-	/**
-	 * Create instance of controller with Model
-	 *
-	 * @return void
-	 */
-	public function __construct({{Model}} $model)
-	{
-		$this->model = $model;
-	}
+class {{class}} extends Controller {
+
+    /**
+     * @var {{model_name_service}}
+     */
+    private ${{model_name_var_service}};
+
+    /**
+     * {{class}} constructor.
+     */
+    public function __construct({{model_name_service}} ${{model_name_var_service}})
+    {
+        $this->{{model_name_var_service}} = ${{model_name_var_service}};
+    }
 
 	/**
 	 * Display a listing of the resource.
@@ -31,11 +29,9 @@ class {{Model}}Controller extends Controller
 	 * @return Response
 	 */
 	public function index()
-	{
-		${{models}} = $this->model->paginate();
-
-		return view('{{models}}.index', compact('{{models}}'));
-	}
+    {
+        return $this->{{model_name_var_service}}->index();
+    }
 
 	/**
 	 * Show the form for creating a new resource.
@@ -43,9 +39,9 @@ class {{Model}}Controller extends Controller
 	 * @return Response
 	 */
 	public function create()
-	{
-		return view('{{models}}.create');
-	}
+    {
+        return $this->{{model_name_var_service}}->create();
+    }
 
 	/**
 	 * Store a newly created resource in storage.
@@ -53,13 +49,10 @@ class {{Model}}Controller extends Controller
 	 * @param Request $request
 	 * @return Response
 	 */
-	public function store(Request $request)
-	{
-		$inputs = $request->all();
-		$this->model->create($inputs);
-
-		return redirect()->route('{{prefix}}{{models}}.index')->with('message', 'Item created successfully.');
-	}
+	public function store({{model_name_class}}Request $request)
+    {
+        return $this->{{model_name_var_service}}->store($request);
+    }
 
 	/**
 	 * Display the specified resource.
@@ -67,12 +60,10 @@ class {{Model}}Controller extends Controller
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
-	{
-		${{model}} = $this->model->findOrFail($id);
-		
-		return view('{{models}}.show', compact('{{model}}'));
-	}
+	public function show({{model_name_class}} $model)
+    {
+        return $this->{{model_name_var_service}}->show($model);
+    }
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -80,12 +71,10 @@ class {{Model}}Controller extends Controller
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
-	{
-		${{model}} = $this->model->findOrFail($id);
-		
-		return view('{{models}}.edit', compact('{{model}}'));
-	}
+	public function edit({{model_name_class}} $model)
+    {
+        return $this->{{model_name_var_service}}->edit($model);
+    }
 
 	/**
 	 * Update the specified resource in storage.
@@ -94,15 +83,10 @@ class {{Model}}Controller extends Controller
 	 * @param Request $request
 	 * @return Response
 	 */
-	public function update(Request $request, $id)
-	{
-		$inputs = $request->all();
-
-		${{model}} = $this->model->findOrFail($id);		
-		${{model}}->update($inputs);
-
-		return redirect()->route('{{prefix}}{{models}}.index')->with('message', 'Item updated successfully.');
-	}
+	public function update({{model_name_class}}Request $request,{{model_name_class}} $model)
+    {
+        return $this->{{model_name_var_service}}->update($model,$request);
+    }
 
 	/**
 	 * Remove the specified resource from storage.
@@ -110,10 +94,8 @@ class {{Model}}Controller extends Controller
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
-	{
-		$this->model->destroy($id);
-
-		return redirect()->route('{{prefix}}{{models}}.index')->with('message', 'Item deleted successfully.');
-	}
+	public function destroy({{model_name_class}} $model)
+    {
+        return $this->{{model_name_var_service}}->destroy($model);
+    }
 }
