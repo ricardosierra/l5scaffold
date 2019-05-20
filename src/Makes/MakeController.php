@@ -1,7 +1,6 @@
 <?php
 namespace RicardoSierra\L5scaffold\Makes;
 
-//use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Filesystem\Filesystem;
 use RicardoSierra\L5scaffold\Commands\ScaffoldMakeCommand;
@@ -11,7 +10,6 @@ use RicardoSierra\L5scaffold\Migrations\SyntaxBuilder;
 
 class MakeController
 {
-//    use AppNamespaceDetectorTrait, MakerTrait;
     use DetectsApplicationNamespace, MakerTrait;
 
 
