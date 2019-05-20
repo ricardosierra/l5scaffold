@@ -81,7 +81,9 @@ class ScaffoldMakeCommand extends Command
      *
      * @return mixed
      */
-    public function handle()
+    public function handle() { return $this->fire(); }
+
+    public function fire()
     {
         // Start Scaffold
         $this->info('Configuring ' . $this->getObjName("Name") . '...');
