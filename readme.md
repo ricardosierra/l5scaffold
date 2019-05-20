@@ -2,6 +2,9 @@
 [![Travis](https://img.shields.io/travis/ricardosierra/l5scaffold.svg?style=flat-square)](https://github.com/ricardosierra/l5scaffold)
 [![Packagist](https://img.shields.io/packagist/dt/ricardosierra/l5scaffold.svg?style=flat-square)](https://packagist.org/packages/ricardosierra/l5scaffold)
 [![Tag](https://img.shields.io/github/tag/ricardosierra/l5scaffold.svg)](https://github.com/ricardosierra/l5scaffold/tags)
+
+Worked with Laravel 5.8 :)
+
 ## Usage
 
 ### Step 1: Install Through Composer
