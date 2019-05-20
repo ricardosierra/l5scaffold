@@ -1,19 +1,19 @@
 <?php
 
-namespace Celtaphp\L5scaffold\Commands;
+namespace RicardoSierra\L5scaffold\Commands;
 
 //use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Composer;
-use Celtaphp\L5scaffold\Makes\MakeController;
-use Celtaphp\L5scaffold\Makes\MakeLayout;
-use Celtaphp\L5scaffold\Makes\MakeMigration;
-use Celtaphp\L5scaffold\Makes\MakeModel;
-use Celtaphp\L5scaffold\Makes\MakerTrait;
-use Celtaphp\L5scaffold\Makes\MakeSeed;
-use Celtaphp\L5scaffold\Makes\MakeView;
+use RicardoSierra\L5scaffold\Makes\MakeController;
+use RicardoSierra\L5scaffold\Makes\MakeLayout;
+use RicardoSierra\L5scaffold\Makes\MakeMigration;
+use RicardoSierra\L5scaffold\Makes\MakeModel;
+use RicardoSierra\L5scaffold\Makes\MakerTrait;
+use RicardoSierra\L5scaffold\Makes\MakeSeed;
+use RicardoSierra\L5scaffold\Makes\MakeView;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 

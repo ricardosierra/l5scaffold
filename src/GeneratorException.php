@@ -1,6 +1,6 @@
 <?php
 
-namespace Celtaphp\L5scaffold;
+namespace RicardoSierra\L5scaffold;
 
 class GeneratorException extends \Exception {
 

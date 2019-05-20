@@ -1,6 +1,6 @@
 <?php
 
-namespace Celtaphp\L5scaffold\Tests;
+namespace RicardoSierra\L5scaffold\Tests;
 
 use PHPUnit_Framework_TestCase as PHPUnit;
 

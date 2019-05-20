@@ -1,10 +1,10 @@
 <?php
 
-namespace Celtaphp\L5scaffold\Localizations;
+namespace RicardoSierra\L5scaffold\Localizations;
 
 /**
  * Class SyntaxBuilder
- * @package Celtaphp\L5scaffold\Migrations
+ * @package RicardoSierra\L5scaffold\Migrations
  * @author Ryan Gurnick <ryangurnick@gmail.com>
  */
 class SyntaxBuilder

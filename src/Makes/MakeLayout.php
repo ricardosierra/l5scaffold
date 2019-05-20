@@ -6,11 +6,11 @@
  * Time: 11:49 PM
  */
 
-namespace Celtaphp\L5scaffold\Makes;
+namespace RicardoSierra\L5scaffold\Makes;
 
 
 use Illuminate\Filesystem\Filesystem;
-use Celtaphp\L5scaffold\Commands\ScaffoldMakeCommand;
+use RicardoSierra\L5scaffold\Commands\ScaffoldMakeCommand;
 
 class MakeLayout {
     use MakerTrait;

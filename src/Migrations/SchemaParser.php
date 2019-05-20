@@ -1,10 +1,10 @@
 <?php
 
-namespace Celtaphp\L5scaffold\Migrations;
+namespace RicardoSierra\L5scaffold\Migrations;
 
 /**
  * Class SchemaParser with modifications by Fernando
- * @package Celtaphp\L5scaffold\Migrations
+ * @package RicardoSierra\L5scaffold\Migrations
  * @author Jeffrey Way <jeffrey@jeffrey-way.com>
  */
 class SchemaParser

@@ -1,6 +1,6 @@
 <?php
 
-namespace Celtaphp\L5scaffold\Tests;
+namespace RicardoSierra\L5scaffold\Tests;
 
 use PHPUnit_Framework_TestCase as PHPUnit;
 
@@ -36,7 +36,7 @@ class CommandTest extends PHPUnit
 	{
 		$this->app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
 		
-		$this->app->register('Celtaphp\L5scaffold\GeneratorsServiceProvider');
+		$this->app->register('RicardoSierra\L5scaffold\GeneratorsServiceProvider');
 
         $this->app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 	}

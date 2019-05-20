@@ -1,6 +1,6 @@
 <?php
 
-namespace Celtaphp\L5scaffold;
+namespace RicardoSierra\L5scaffold;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -36,7 +36,7 @@ class GeneratorsServiceProvider extends ServiceProvider {
 	private function registerScaffoldGenerator()
 	{
 		$this->app->singleton('command.larascaf.scaffold', function ($app) {
-			return $app['Celtaphp\L5scaffold\Commands\ScaffoldMakeCommand'];
+			return $app['RicardoSierra\L5scaffold\Commands\ScaffoldMakeCommand'];
 		});
 
 		$this->commands('command.larascaf.scaffold');

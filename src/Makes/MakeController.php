@@ -1,12 +1,12 @@
 <?php
-namespace Celtaphp\L5scaffold\Makes;
+namespace RicardoSierra\L5scaffold\Makes;
 
 //use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Console\DetectsApplicationNamespace;
 use Illuminate\Filesystem\Filesystem;
-use Celtaphp\L5scaffold\Commands\ScaffoldMakeCommand;
-use Celtaphp\L5scaffold\Migrations\SchemaParser;
-use Celtaphp\L5scaffold\Migrations\SyntaxBuilder;
+use RicardoSierra\L5scaffold\Commands\ScaffoldMakeCommand;
+use RicardoSierra\L5scaffold\Migrations\SchemaParser;
+use RicardoSierra\L5scaffold\Migrations\SyntaxBuilder;
 
 
 class MakeController
